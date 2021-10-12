@@ -11,7 +11,7 @@
     git remote add origin https://github.com/estdoh/Tp_tio.git
     git branch -M main
     git push -u origin main
-
+    
 ● El equipo deberá utilizar un repositorio público en GitHub y agregar a los
 integrantes del equipo como colaboradores. Ese repositorio será el espacio
 donde se alojarán los artefactos con los cuales el equipo va a trabajar. El objetivo
