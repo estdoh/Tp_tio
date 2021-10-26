@@ -1,0 +1,758 @@
+/* ESTILOS GENERALES */
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #373737;
+}
+
+body {
+  background-color: #590212;
+}
+
+nav {
+  background-color: #212529;
+  width: 100%;
+  position: sticky;
+  top: 0%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+  height: 22%;
+  margin: 0%;
+}
+
+select {
+  background: #bfbdb5;
+  border: none;
+  font-size: 14px;
+  height: 2rem;
+  width: 12rem;
+}
+
+input,
+select {
+  border-radius: 1.5rem;
+  margin-left: 5%;
+  padding-left: 0.7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bf0b1a;
+}
+
+figcaption {
+  text-align: center;
+}
+
+table {
+  background-color: #bfbdb5;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px outset #bf0b1a;
+  text-align: center;
+}
+
+td {
+  width: 40%;
+}
+
+button {
+  text-align: center;
+  border-radius: 1.5rem;
+  background-color: #141516;
+  color: #f2091d;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+button:hover {
+  background-color: #f2091d;
+  color: #141516;
+}
+
+footer {
+  padding-top: 10px;
+  background-color: #200d16;
+  position: relative;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+}
+
+footer h4 {
+  color: #bfbdb5;
+  font-size: 0.7rem;
+}
+
+/* BARRA NAVEGACION  */
+
+.logo {
+  width: 30%;
+  margin-top: 2%;
+  padding-left: 3%;
+  display: flex;
+}
+
+.logo h1 {
+  padding-top: 10%;
+  padding-right: 3%;
+  font-size: 110%;
+}
+
+.logo h1 a {
+  color: #bfbdb5;
+}
+
+.logo h1 a:hover {
+  color: #bf0b1a;
+}
+
+.logo img {
+  width: 40%;
+  height: 60%;
+}
+
+/* Menú Barra de navegación */
+.menu-hamburguesa {
+  background: none;
+  border: none;
+  color: white;
+  right: 0px;
+  cursor: pointer;
+  padding: 0 10px;
+  display: block;
+  list-style: none;
+}
+
+.menu-navbar {
+  padding-top: 10px;
+  background-color: #a10500;
+  color: white;
+  list-style: none;
+  margin-right: 20px;
+  position: fixed;
+  top: 10%;
+  width: 100%;
+  padding: 20px 0;
+  align-items: center;
+  overflow-y: auto;
+  font-size: 14px;
+  transition: left 0.5s;
+
+  left: 100%;
+}
+
+.menu-navbar-visible {
+  padding-top: 10px;
+  background-color: #a10500;
+  color: white;
+  list-style: none;
+  margin-right: 20px;
+  position: fixed;
+  left: 70%;
+  top: 10%;
+  width: 100%;
+  padding: 20px 0;
+  align-items: center;
+  overflow-y: auto;
+  font-size: 14px;
+  transition: left 0.5s;
+}
+
+.menu-navbar ul li {
+  flex-direction: column;
+  margin: 10px;
+  margin-right: 5px;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.menu-navbar ul li a {
+  color: #bfbdb5;
+}
+
+.menu-navbar ul li a:hover {
+  color: #bf0b1a;
+}
+
+/* Fin menú barra de navegación */
+
+/*Contenido Home*/
+
+/* contenido bienvenida y en cartelera*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f2f4;
+}
+
+.imagen-home {
+  width: 100%;
+}
+
+.intro-bienvenida {
+  width: 80%;
+  margin-top: 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 1em;
+}
+
+.intro-bienvenida h1 {
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.parrafo-introductorio {
+  display: none;
+}
+.intro-bienvenida p {
+  margin-top: 5%;
+  text-align: justify;
+}
+
+.linea-separadora {
+  width: 100%;
+  background-color: #000;
+  height: 3px;
+  border: none;
+}
+
+.titulo-encartelera {
+  margin: 3%;
+  font-size: 1.3em;
+}
+
+.cartelera-index figure {
+  margin-left: 2em;
+}
+/*fin bienvenida y en cartelera*/
+
+/* Contenido precios y rankings*/
+
+.container-info {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.precios table {
+  margin: 20px;
+}
+
+.precios {
+  width: 0%;
+  font-size: 1em;
+}
+
+/*ranking*/
+/* Recomendadas */
+
+.ranking {
+  margin: 10%;
+  justify-content: center;
+}
+
+.ranking h3 {
+  margin-bottom: 10%;
+}
+
+.ranking ul {
+  list-style: square;
+  margin-left: 10%;
+}
+
+.ranking ul li {
+  margin-top: 5%;
+}
+
+/* Top Argentina */
+
+.top-argentina {
+  margin-top: 10%;
+}
+
+.top-argentina h3 {
+  margin-bottom: 10%;
+}
+
+.top-argentina ol {
+  margin-left: 10%;
+}
+
+.top-argentina ol li {
+  margin-top: 5%;
+}
+
+/*fin contenido precios y rankings*/
+
+/* HTML2: CARTELERA */
+/*Cartelera y sinopsis*/
+
+.container-encartelera {
+  background-color: #f1f2f4;
+  text-align: justify;
+}
+
+.peliculas-en-cartelera h2 {
+  padding: 10%;
+  text-align: left;
+}
+
+.peliculas-en-cartelera ul {
+  text-align: left;
+  margin-left: 10%;
+  font-weight: bold;
+}
+
+.peliculas-en-cartelera ul li {
+  list-style-type: none;
+  list-style-position: center;
+  padding-bottom: 5%;
+}
+
+.peliculas-y-sinopsis h2 {
+  margin: 10%;
+  font-size: 1.3em;
+}
+
+.pelicula-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pelicula-item img {
+  margin: 5%;
+  width: 50%;
+  height: 50%;
+}
+.pelicula-item h3 a {
+  padding-top: 20%;
+}
+.peliculas-y-sinopsis h3,
+.peliculas-y-sinopsis p {
+  margin: 3%;
+}
+/*Fin cartelera y sinopsis*/
+
+/* Tabla de horarios */
+
+.editar-input {
+  width: auto;
+  margin: 0.5em;
+}
+
+.editar-select {
+  background-color: white;
+  width: auto;
+  margin: 0.5em;
+}
+
+.horarios {
+  padding-bottom: 5%;
+}
+
+.horarios h2 {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.tabla-horarios {
+  width: 80%;
+}
+
+.paginador {
+  margin-left: 30%;
+}
+
+.paginador button {
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.paginador button img {
+  height: 2rem;
+}
+
+.paginador button:hover img {
+  height: 2.1rem;
+}
+
+.select-filtro {
+  margin-left: 0;
+}
+
+.fila-resaltada {
+  animation: pulse 3s infinite;
+  font-weight: bold;
+}
+@keyframes pulse {
+  0% {
+    background-color: #bfbdb5;
+  }
+  100% {
+    background-color: #f42922;
+  }
+}
+
+.fila-resaltada td {
+  color: #5b5a56;
+}
+
+.botones-tabla-horarios {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botones-tabla-horarios button {
+  width: 30%;
+  height: 10%;
+}
+
+#form-filtros {
+  color: #5b5a56;
+}
+#form-filtros,
+.formulario-admin {
+  padding-left: 10%;
+}
+
+.formulario-admin form label {
+  width: 40%;
+}
+
+.formulario-admin form input {
+  width: 60%;
+}
+
+.formulario-admin form input[name="descuento"] {
+  width: 30%;
+}
+
+.formulario-admin form input[type="radio"] {
+  width: 15%;
+}
+
+.formulario-admin div {
+  margin: 3%;
+}
+/* Fin tabla de horarios */
+/*Fin HTML2: CARTELERA*/
+
+/*HTML 3: SUSCRIPCION*/
+/*Suscripcion*/
+
+.newsletter h1 {
+  margin: 10%;
+}
+
+.newsletter p {
+  padding: 4%;
+}
+
+.formulario-suscripcion {
+  border: 2px solid #212529;
+  padding: 2.5em;
+  margin-bottom: 10%;
+}
+
+.item-formulario {
+  padding: 3%;
+  font-weight: bold;
+}
+
+.checkbox-item {
+  margin-right: 3%;
+  margin-top: 5%;
+}
+/*Fin suscripcion*/
+
+/*Captcha*/
+
+.numero-captcha {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: #f2091d;
+  border-radius: 8%;
+  width: 70%;
+  text-align: center;
+  border: 2px solid #f2091d;
+  margin: 5%;
+}
+
+.input-captcha {
+  margin-bottom: 5%;
+  height: 2rem;
+}
+
+.btn-suscribirse {
+  width: 60%;
+  height: 50%;
+}
+
+.mostrar-captcha {
+  display: block;
+  text-align: center;
+}
+
+.ocultar-captcha {
+  display: none;
+}
+
+/*Fin Captcha*/
+/* fin HTML3:SUSCRIPCION*/
+
+/* Comienzo DESKTOP*/
+
+@media only screen and (min-width: 600px) {
+  /*  BARRA NAVEGACION  */
+
+  nav {
+    flex-direction: row;
+    padding-bottom: 1%;
+  }
+
+  .logo {
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .logo h1 {
+    padding-top: 10px;
+  }
+
+  .logo h1 a {
+    font-size: 2em;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Menú Barra de navegación */
+
+  .menu-hamburguesa {
+    display: none;
+  }
+
+  .menu-navbar {
+    width: 70%;
+    padding-top: 10px;
+    left: 30%;
+    top: 0;
+    background: transparent;
+  }
+
+  .menu-navbar ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .menu-navbar ul li {
+    flex-direction: row;
+    margin-right: 70px;
+    font-size: 20px;
+  }
+
+  /* Fin menú barra de navegación */
+
+  /*Contenido Home*/
+
+  /* contenido bienvenida y en cartelera*/
+
+  .container {
+    margin: 0 10%;
+  }
+
+  .intro-bienvenida {
+    width: 60%;
+  }
+
+  .intro-bienvenida h1 {
+    margin-bottom: 20px;
+  }
+
+  .parrafo-introductorio {
+    display: block;
+  }
+
+  .intro-bienvenida p {
+    margin-top: 10px;
+  }
+
+  .titulo-encartelera {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cartelera-index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .cartelera-index > figure {
+    margin-left: 1.1em;
+  }
+
+  /*fin bienvenida y en cartelera*/
+
+  /* Contenido precios y rankings*/
+
+  .container-info {
+    flex-direction: row;
+    flex-flow: row wrap;
+  }
+
+  .container-info table {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .precios {
+    width: 50%;
+  }
+
+  .precios h2 {
+    margin-left: 5%;
+  }
+
+  .precios table td {
+    height: 60px;
+  }
+  /*ranking*/
+  /* Recomendadas */
+
+  .ranking {
+    margin: 0 0 5% 10%;
+  }
+  /*fin contenido precios y rankings*/
+
+  /* HTML2: CARTELERA */
+  /*Cartelera y sinopsis*/
+
+  .container-encartelera {
+    margin: 0 10%;
+  }
+
+  .peliculas-en-cartelera h2 {
+    padding: 30px;
+  }
+
+  .peliculas-en-cartelera ul {
+    margin-left: 30px;
+  }
+
+  .pelicula-item:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .peliculas-en-cartelera ul li {
+    padding-bottom: 10px;
+  }
+
+  .peliculas-y-sinopsis h2 {
+    margin: 3%;
+  }
+
+  .pelicula-item {
+    flex-direction: row;
+  }
+
+  .pelicula-item img {
+    margin: 15px;
+    width: 20%;
+  }
+  .pelicula-item h3 a {
+    padding-top: 90px;
+  }
+
+  /*Fin cartelera y sinopsis*/
+
+  /* Tabla de horarios */
+
+  .botones-tabla-horarios {
+    padding-right: 10%;
+  }
+
+  .botones-tabla-horarios button {
+    width: 10%;
+    height: 10%;
+  }
+
+  .paginador {
+    margin-left: 40%;
+  }
+
+  .formulario-admin form label {
+    margin: 1%;
+  }
+
+  .formulario-admin form input {
+    margin: 1%;
+    width: 30%;
+  }
+
+  .formulario-admin form input[name="descuento"] {
+    width: 10%;
+  }
+
+  .formulario-admin form input[type="radio"] {
+    width: 2%;
+  }
+  /* Fin tabla de horarios */
+  /*Fin HTML2: CARTELERA*/
+
+  /*HTML 3: SUSCRIPCION*/
+  /*Suscripcion*/
+
+  .newsletter h1 {
+    margin-left: 2%;
+  }
+
+  .item-formulario {
+    text-align: center;
+  }
+
+  .checkbox-item {
+    margin-right: 5%;
+  }
+
+  /*Fin suscripcion*/
+  /*Captcha*/
+
+  .numero-captcha {
+    width: 30%;
+    margin-left: 30%;
+  }
+
+  .input-captcha {
+    margin-left: 35%;
+  }
+
+  .btn-suscribirse {
+    width: 30%;
+    margin-left: 30%;
+  }
+}
+/*Fin Captcha*/
+/* fin HTML3:SUSCRIPCION */

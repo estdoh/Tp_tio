@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suscribite!</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>
+          <a href="index.html">Cinemanía</a>
+        </h1>
+        <img src="Images/logo.png" alt="logo" />
+      </div>
+
+      <button class="menu-hamburguesa">
+        <img src="Images/menu.png" alt="logo" />
+      </button>
+
+      <div class="menu-navbar">
+        <ul>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="cartelera.html">CARTELERA</a>
+          </li>
+          <li>
+            <a href="suscripcion.html">SUSCRIBITE!</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="newsletter">
+        <h1>Newsletter</h1>
+        <p>
+          Suscribíte a nuestra Newsletter para recibir todas las novedades en
+          Cartelera, próximos estrenos y más!
+        </p>
+        <div class="formulario-suscripcion">
+          <p>Completá este formulario:</p>
+          <form id="form-suscripcion" action="#">
+            <div class="item-formulario">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" value="" />
+            </div>
+            <div class="item-formulario">
+              <label for="apellido">Apellido</label>
+              <input type="text" name="apellido" value="" />
+            </div>
+            <div class="item-formulario">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="ejemplo@gmail.com"
+                value=""
+              />
+            </div>
+            <div class="item-formulario">
+              <label for="ciudad">Ciudad</label>
+              <input type="text" name="ciudad" value="" />
+            </div>
+            <div class="item-formulario">
+              <p>Contanos qué género es tu favorito:</p>
+              <div>
+                <label for="accion">Acción</label>
+                <input
+                  class="checkbox-item"
+                  type="checkbox"
+                  name="accion"
+                  value=""
+                />
+                <label for="terror">Terror</label>
+                <input
+                  class="checkbox-item"
+                  type="checkbox"
+                  name="terror"
+                  value=""
+                />
+              </div>
+              <div>
+                <label for="comedia">Comedia</label>
+                <input
+                  class="checkbox-item"
+                  type="checkbox"
+                  name="comedia"
+                  value=""
+                />
+                <label for="animadas">Animadas</label>
+                <input
+                  class="checkbox-item"
+                  type="checkbox"
+                  name="animadas"
+                  value=""
+                />
+              </div>
+            </div>
+            <div>
+              <label for="captcha">Verifique que no es un robot:</label>
+              <p id="codigo-captcha" class="numero-captcha"></p>
+              <input
+                class="input-captcha"
+                type="number"
+                name="captcha"
+                value=""
+              />
+              <p id="resultado-valido-captcha">
+                El código ingresado es correcto!
+              </p>
+              <p id="resultado-invalido-captcha">
+                El código ingresado es incorrecto, por favor vuelvalo a
+                intentar!
+              </p>
+            </div>
+            <button type="submit" class="btn-suscribirse">Suscribite!</button>
+            <script src="JS/main.js"></script>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h4>
+        © Copyright Cinemanía Argentina. Seguinos en nuestras redes sociales:
+      </h4>
+      <div>
+        <a href="https://facebook.com">
+          <img src="Images/facebook.png" alt="facebook"
+        /></a>
+        <a href="https://instagram.com">
+          <img src="Images/instagram.png" alt="instagram"
+        /></a>
+        <a href="https://twitter.com">
+          <img src="Images/twitter.png" alt="twitter"
+        /></a>
+      </div>
+    </footer>
+    <script src="./JS/menu.js"></script>
+  </body>
+</html>
