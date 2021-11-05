@@ -1,0 +1,3 @@
+El informe escrito se realizó en Google Drive para que todos los miembros del equipo pudieran participar. Consta de una portada donde se encuentra el nombre de la universidad, el nombre de la carrera y de la asignatura TIO: Tecnología de la Información en la Organizaciones.
+Además aparecen el nombre de los autores y de los profesores.
+El informe consta de una introducción, donde se quiso expresar de manera escueta la definición de "sistema de control de versiones", Git qué es y como se trabaja con este sitema de control 
